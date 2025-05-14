@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: producer
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+
+
+
+
+
+#  Config Key	What It Does
+#  key-serializer	Tells Kafka how to convert the key (e.g., String) to bytes
+#  value-serializer	Tells Kafka how to convert the value (e.g., a POJO) to JSON, then to bytes
+

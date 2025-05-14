@@ -9,7 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="stock-service" />
         <module name="base-domains" />
+        <module name="producer" />
         <module name="order-service" />
+        <module name="consumer" />
         <module name="email-service" />
       </profile>
     </annotationProcessing>
@@ -17,8 +19,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="base-domains" options="-parameters" />
+      <module name="consumer" options="-parameters" />
       <module name="email-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="producer" options="-parameters" />
       <module name="stock-service" options="-parameters" />
     </option>
   </component>
